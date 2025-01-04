@@ -4,8 +4,8 @@ import socket
 from threading import Thread
 import random
 
-HOST = '127.0.0.1'
-PORT = 7777
+TERRARIA_SERVER_IP = '127.0.0.1'
+TERRARIA_SERVER_PORT = 7777
 
 def log_message(message):
     with open("log.txt", "a") as log_file:
@@ -15,7 +15,7 @@ def handle_client(client_socket):
     try:
         # Connect to the actual server
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
-            server_socket.connect((HOST, PORT))
+            server_socket.connect((TERRARIA_SERVER_IP, TERRARIA_SERVER_PORT))
 
             # Create threads to copy data between client and server
             threads = [
@@ -69,9 +69,9 @@ def copy_data(src, dst, prefix):
 
 def start_proxy():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
-        server_socket.bind(('127.0.0.1', 7777))
+        server_socket.bind(('127.0.0.1', 7778))
         server_socket.listen()
-        start_message = f'Proxy server started on {HOST}:{PORT}'
+        start_message = f'Proxy server started on 127.0.0.1:7778 Waiting for client...'
         print(start_message)
         log_message(start_message)
 
