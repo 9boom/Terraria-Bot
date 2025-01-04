@@ -149,6 +149,7 @@ Below are the default values for the bot's configuration, which you can customiz
 bot = terraria_bot.Bot(terraria_server_ip="127.0.0.1", terraria_server_port=7777,terraria_protocol_version_name="Terraria279",player_slot=0, skin_variant=4, hair=0, name="The_Ironman",mana_level=20,mana_max=20,health_amount=400,health_max=400,hair_dye=0, hide_visible_accessory=0,hide_visible_accessory_v2=0, hide_misc=0, hair_color_R=255, hair_color_G=0, hair_color_B=255,skin_color_R=255, skin_color_G=255,skin_color_B=255, eye_color_R=0, eye_color_G=0, eye_color_B=255,shirt_color_R=255, shirt_color_G=255, shirt_color_B=0, under_shirt_color_R=0, under_shirt_color_G=255,
 under_shirt_color_B=255, pants_color_R=0, pants_color_G=255, pants_color_B=0,shoe_color_R=255,shoe_color_G=255, shoe_color_B=255, difficult=0, password="123456")
 ```
+ * If you want to join journey world just set difficult to 14
 
 1. Loop process of Bot
 ```python
@@ -479,7 +480,9 @@ asyncio.run(main())
 ```
 
 
-![[./screenshots/example_chat_cnc.mp4]]
+[![Watch Video](https://raw.githubusercontent.com/9boom/Terraria-Bot/main/screenshots/thumbnail.png)](https://raw.githubusercontent.com/9boom/Terraria-Bot/main/screenshots/example_chat_cnc.mp4)
+
+
 ## License
 
 This project is licensed under the **MIT License.** See the LICENSE file for details.
