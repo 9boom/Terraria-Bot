@@ -494,6 +494,7 @@ We welcome contributions from the community! To contribute, fork the repository,
 ## Acknowledgments
 
 Thanks to these learning resources that helped me complete this project.
+ **Exploring Terraria's Server Protocol (trust pt. 1)**: [link here](https://angelolloti.com/blog/trust-1/)
  **Terraria Network Protocol**: [link here](https://seancode.com/terrafirma/net.html)
  **Terraria Game Source Code**: [link here](https://github.com/MikeyIsBaeYT/Terraria-Source-Code)
  **ChatGPT**: [link here](https://chatgpt.com)
